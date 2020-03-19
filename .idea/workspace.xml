@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d265376-3278-41d0-affb-83ca8a516a82" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/PG_cliffwalking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cartpole_a2c.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/PG_cartpole.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/env/cliff_walking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/running_variance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dqn_atari.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,14 +38,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PG_cartpole.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PG_cartpole.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/env/PG_cartpole.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="153" column="45" lean-forward="true" selection-start-line="153" selection-start-column="45" selection-end-line="153" selection-end-column="45" />
+            <state relative-caret-position="264">
+              <caret line="162" column="32" selection-start-line="162" selection-start-column="32" selection-end-line="162" selection-end-column="32" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dqn_atari.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dqn_atari.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/keras/engine/training.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="1168" selection-start-line="1168" selection-end-line="1168" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_layer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/keras/engine/base_layer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
             </state>
           </provider>
         </entry>
@@ -92,6 +115,10 @@
       <find>actions</find>
       <find>3, 11</find>
       <find>state</find>
+      <find>epsilon</find>
+      <find>agent</find>
+      <find>DQN</find>
+      <find>summary()</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,13 +133,15 @@
         <option value="$PROJECT_DIR$/PG_cliffwalking.py" />
         <option value="$PROJECT_DIR$/cartpole_a2c.py" />
         <option value="$PROJECT_DIR$/env/PG_cartpole.py" />
+        <option value="$PROJECT_DIR$/dqn_atari.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="937" />
-    <option name="width" value="980" />
-    <option name="height" value="1100" />
+    <option name="x" value="951" />
+    <option name="y" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -127,11 +156,6 @@
             <path>
               <item name="dqn_pg_practice" type="b2602c69:ProjectViewProjectNode" />
               <item name="dqn_pg_practice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dqn_pg_practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dqn_pg_practice" type="462c0819:PsiDirectoryNode" />
-              <item name="env" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.PG_cartpole">
+  <component name="RunManager" selected="Python.dqn_atari">
     <configuration name="PG_cartpole" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="dqn_pg_practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -232,14 +256,34 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="dqn_atari" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="dqn_pg_practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dqn_atari.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
       <item itemvalue="Python.cliff_walking" />
       <item itemvalue="Python.PG_cliffwalking" />
       <item itemvalue="Python.PG_cartpole" />
       <item itemvalue="Python.cartpole_a2c" />
+      <item itemvalue="Python.dqn_atari" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.dqn_atari" />
         <item itemvalue="Python.PG_cartpole" />
         <item itemvalue="Python.cartpole_a2c" />
         <item itemvalue="Python.PG_cliffwalking" />
@@ -264,12 +308,12 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1473893" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.29932886" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32523617" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49932525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32928476" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -287,6 +331,53 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/env/cliff_walking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PG_cliffwalking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2750">
+          <caret line="129" column="4" selection-start-line="129" selection-start-column="4" selection-end-line="140" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cartpole_a2c.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="35" column="79" selection-start-line="33" selection-start-column="8" selection-end-line="35" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/running_variance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/PG_cartpole.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3278">
+          <caret line="153" column="45" lean-forward="true" selection-start-line="153" selection-start-column="45" selection-end-line="153" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/env/cliff_walking.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1364">
@@ -395,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/keras/engine/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="1168" selection-start-line="1168" selection-end-line="1168" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/keras/engine/training_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -455,11 +539,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/env/PG_cartpole.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="153" column="45" lean-forward="true" selection-start-line="153" selection-start-column="45" selection-end-line="153" selection-end-column="45" />
+        <state relative-caret-position="264">
+          <caret line="162" column="32" selection-start-line="162" selection-start-column="32" selection-end-line="162" selection-end-column="32" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/keras/engine/base_layer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="1168" selection-start-line="1168" selection-end-line="1168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dqn_atari.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>
